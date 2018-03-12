@@ -71,7 +71,7 @@ hr {
 }
 .banner {
     height: 515px;
-    background-image: url(./img/rs-cover-2-2-1-1.jpg);
+    background-image: url(img/rs-cover-2-2-1-1.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -81,7 +81,6 @@ hr {
     
 }
 .userCard {
-    border: 1px solid red;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
