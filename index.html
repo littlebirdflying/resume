@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>王童孟的个人简历</title>
-    <link rel="stylesheet" href="main.css">
+
     <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+    <link rel="stylesheet" href="main.css">
     <script src="//at.alicdn.com/t/font_587178_arn742q6rxa5g66r.js"></script>
 
     <style type="text/css">
@@ -75,6 +77,7 @@
     <div class="mask"></div>
 </div>
 <main>
+
     <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
             <div class="picture">
@@ -181,43 +184,55 @@
 </section>
 <section data-x class="portfolio" id="siteWorks">
     <h2>作品集</h2>
-    <nav>
-        <ol class="clearfix">
-            <li id="portfolioAll">所有</li>
-            <li id="portfolioFramework">框架</li>
-            <li id="portfolioVallina">原生 JS &amp;CSS</li>
-        </ol>
-        <div id="portfolioBar" class="bar state-1">
-            <div class="bar-inner">
 
-            </div>
+
+    <!--变成轮播-->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./img/works/nav-page.jpg" class="swiper-slide">
+            <img src="./img/works/canvas.jpg"  class="swiper-slide">
+            <img src="./img/works/apple-style-slides.jpg"  class="swiper-slide">
+
         </div>
-    </nav>
-    <div class="works" style="height: 597px;">
-        <div class="big" style="top: 0; left:0;">
-            <img src="./img/1.jpg" alt="作品1">
-        </div>
-        <div class="small" style="top: 0; left:645px;">
-            <img src="./img/2.jpg" alt="作品2">
-        </div>
-        <div class="small" style="top: 298px; left:645px;">
-            <img src="./img/3.jpg" alt="作品3">
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+
+
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+<script>
+    console.log(window.Swiper)
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+</script>
 <script>
         // siteWelcome.classList.remove('active')
 
-    portfolioAll.onclick = function () {
-        portfolioBar.className = 'bar state-1'
-    }
-    portfolioFramework.onclick = function () {
-        portfolioBar.className = 'bar state-2'
-    }
-    portfolioVallina.onclick = function () {
-        portfolioBar.className = 'bar state-3'
-    }
+
     // 添加 offset 类
     let specialTags = document.querySelectorAll('[data-x]')  // 取到含有data-x属性的元素
     for(let i=0;i<specialTags.length; i++) {
