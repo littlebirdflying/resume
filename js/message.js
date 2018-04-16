@@ -51,7 +51,7 @@
         bindEvents:function(){
             this.form.addEventListener('submit', function(e){
                 e.preventDefault()  // 不阻止会刷新页面
-                this.saveMessage()
+                this.model.saveMessage()
             })
         },
         saveMessage: function(){
