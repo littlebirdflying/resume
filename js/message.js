@@ -49,9 +49,9 @@
             )
         },
         bindEvents:function(){
-            this.form.addEventListener('submit', function(e){
+            this.form.addEventListener('submit', (e)=>{
                 e.preventDefault()  // 不阻止会刷新页面
-                this.model.saveMessage()
+                this.saveMessage()
             })
         },
         saveMessage: function(){
