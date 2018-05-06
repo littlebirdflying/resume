@@ -16,9 +16,9 @@
 <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
         <a class="logo" href="#" alt="logo" style="float:left;">
-            <span class="rs">RS</span><span class="card">card</span>
+            <span class="rs">W</span><span class="card">TM</span>
         </a>
-        <nav class="menu" style="float:right;">
+        <nav class="menu">
             <ul class="clearfix">
                 <li><a href="#siteAbout">关于</a></li>
                 <li><a href="#siteSkills">技能</a></li>
@@ -57,11 +57,15 @@
                 <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
             </div>
             <div class="text">
-                  <span class="welcome">Hello
+                  <span class="welcome">你好，我是一名前端工程师
                     <span class="triangle"></span>
                   </span>
-                <h1>王童孟</h1>
-                <p>前端开发工程师</p>
+                <div >
+                    <h1>王童孟</h1>
+                    <p>
+                        前端工程师，熟悉 HTML5/CSS3/JavaScript/jQuery/Vue
+                    </p>
+                </div>
                 <hr>
                 <dl>
                     <dt>年龄</dt>
@@ -119,39 +123,27 @@
     <ol class="clearfix">
         <li>
             <h3>HTML 5 &amp; CSS 3</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 10%;"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
         <li>
             <h3>JavaScript</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 20%"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
         <li>
             <h3>jQuery</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 30%"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
         <li>
             <h3>Vue.js</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 40%"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
         <li>
             <h3>React.js</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 50%"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
         <li>
             <h3>Node.js</h3>
-            <div class="progressBar">
-                <div class="progress" style="width: 60%"></div>
-            </div>
+            <p>文字文字文字文字文字文字文字文字文字</p>
         </li>
     </ol>
 </section>
@@ -160,21 +152,45 @@
     <!--变成轮播-->
     <!--这就是view, 用户看得见的东西-->
     <!-- Slider main container -->
-    <div id="mySlides">
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <img src="./img/works/nav-page.jpg" class="swiper-slide">
-                <img src="./img/works/canvas.jpg" class="swiper-slide">
-                <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+    <div class="works">
+        <ol>
+            <li>
+                <img src="./img/works/nav-page.jpg">
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+            <li>
+                <img src="./img/works/canvas.jpg">
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+            <li>
+                <img src="./img/works/apple-style-slides.jpg" >
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+            <li>
+                <img src="./img/works/nav-page.jpg">
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+            <li>
+                <img src="./img/works/canvas.jpg">
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+            <li>
+                <img src="./img/works/apple-style-slides.jpg" >
+                <p>关键字</p>
+                <div><a href="#">预览链接</a><a href="#">源码链接</a></div>
+                <p>描述</p>
+            </li>
+        </ol>
     </div>
 
 </section>
@@ -194,8 +210,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
+<script src="./js/base/View.js"></script>
+<script src="./js/base/Model.js"></script>
+<script src="./js/base/Controller.js"></script>
 <!-- 模块化 -->
-<script src="./js/init-swiper.js"></script>
+<!--<script src="./js/init-swiper.js"></script>-->
 <script src="./js/auto-slide-up.js"></script>
 <script src="./js/sticky-topbar.js"></script>
 <script src="./js/smoothly-navigation.js"></script>

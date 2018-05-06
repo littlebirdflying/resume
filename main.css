@@ -26,6 +26,7 @@ ul, ol {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
+img {max-width:100%;}
 
 .clearfix::after {
     content: '';
@@ -36,11 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 [data-x].active {
     outline: 1px solid red;
 }
-[data-x].offset{
-    transform:translateY(100px);
+
+[data-x].offset {
+    transform: translateY(100px);
 }
-[data-x]{
-    transform:translateY(0);
+
+[data-x] {
+    transform: translateY(0);
     transition: all 0.5s;
 }
 
@@ -52,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateY(0);
     }
 }
+
 .icon {
     width: 1em;
     height: 1em;
@@ -59,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     fill: currentColor;
     overflow: hidden;
 }
+
 .topNavBar {
     padding: 20px 0 20px 0;
     position: fixed;
@@ -79,6 +84,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .topNavBar-inner {
     padding: 0 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topNavBar nav {
@@ -98,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.topNavBar nav > ul > li > a {
+.topNavBar nav > ul > li a {
     font-size: 12px;
     color: inherit;
     text-decoration: none;
@@ -112,18 +120,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .topNavBar nav > ul > li.active > a::after,
-.topNavBar nav > ul > li.highlight > a::after{
+.topNavBar nav > ul > li.highlight > a::after {
     content: '';
     display: inline-block;
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 0;
     width: 100%;
-    background: #e06567;
+    background: #7E6EFC;
     height: 3px;
     animation: menuSlide 0.3s;
 
 }
+
 @keyframes menuSlide {
     0% {
         width: 0;
@@ -132,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 }
+
 .topNavBar .submenu {
     display: none;
     position: absolute;
@@ -139,26 +149,30 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     background: white;
     color: #3d4451;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
 .topNavBar li.active > .submenu {
     display: block;
     animation: submenuSlide 0.3s;
 }
+
 @keyframes submenuSlide {
     0% {
-        margin-right: 100%;   /*自己多试试别的属性*/
+        margin-right: 100%; /*自己多试试别的属性*/
     }
     100% {
         margin-right: 0%;
     }
 
 }
+
 .topNavBar .submenu > li {
     white-space: nowrap;
     padding: 5px 10px;
 }
+
 .topNavBar .logo {
     font-size: 24px;
     font-family: "Arial Black";
@@ -167,8 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .topNavBar .logo .rs {
-    margin-right: 4px;
-    color: #E6686A;
+    color: #7E6EFC;
 }
 
 .topNavBar .logo .card {
@@ -197,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .userCard .welcome {
-    background: #E8676B;
+    background: #7E6EFC;
     color: #FFFFFF;
     display: inline-block;
     padding: 4px 16px;
@@ -210,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     border: 10px solid transparent;
     widows: 0px;
-    border-left-color: #E6686A;
+    border-left-color: #7E6EFC;
     border-top-width: 0px;
     position: absolute;
     left: 4px;
@@ -230,10 +243,12 @@ h1, h2, h3, h4, h5, h6 {
 .userCard .text h1 {
     margin-top: 18px;
 }
-
 .userCard .text hr {
     margin: 20px 0;
 }
+
+
+
 
 .userCard .pictureAndText {
     padding: 50px;
@@ -256,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .userCard > footer.media {
-    background: #E8676B;
+    background: #7E6EFC;
     text-align: center;
 }
 
@@ -369,12 +384,13 @@ section.skills .progressBar {
 
 section.skills .progressBar > .progress {
     height: 100%;
-    background: #E6686A;
+    background: #7E6EFC;
     width: 70%;
     border-radius: 2px;
     transform: translateX(0);
     transition: all 1s;
 }
+
 section.skills.offset .progress {
     transform: translateX(-100%);
 }
@@ -382,41 +398,54 @@ section.skills.offset .progress {
 section.portfolio {
     text-align: center;
     margin-bottom: 100px;
-    max-width: 720px;
+    max-width: 1200px;
 }
 
 section.portfolio h2 {
     margin-bottom: 32px;
 }
 
-
 section.portfolio .swiper-container {
     width: 668px;
     height: 501px;
 }
+
 section.portfolio .swiper-button-prev,
 section.portfolio .swiper-button-next {
     background-color: white;
     width: 64px;
     height: 64px;
-    right:100%;
-    left:auto;
-    border-radius:50%;
+    right: 100%;
+    left: auto;
+    border-radius: 50%;
 }
+
 section.portfolio .swiper-button-next {
 
-    left:100%;
-    right:auto;
+    left: 100%;
+    right: auto;
 
 }
 
 section.message > ol {
     max-width: 700px;
-    margin:0 auto;
+    margin: 0 auto;
     border-top: 1px solid #DDD;
 }
+
 section.message > ol > li {
     padding: 16px;
     border-bottom: 1px solid #DDD;
 }
+.works {
 
+}
+.works > ol {
+    display:flex;
+    flex-wrap:wrap;
+}
+.works > ol > li {
+    box-sizing:border-box;
+    width: 33.33333%;
+    padding:20px;
+}

@@ -1,5 +1,5 @@
 !function () {
-    var view = document.querySelector('nav.menu')
+    var view = View('nav.menu')
     var controller = {
         view: null,
         aTags: null,
@@ -19,7 +19,7 @@
         scrollToElement: function (element) {
             let top = element.offsetTop
             let currentTop = window.scrollY
-            let targetTop = top - 80
+            let targetTop = top - 120
             let s = targetTop - currentTop  // 路程
             var coords = {y: currentTop}   // 起始位置
             var t = Math.abs((s / 100) * 300)  // 时间
