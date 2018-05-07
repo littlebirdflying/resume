@@ -19,7 +19,7 @@
         scrollToElement: function (element) {
             let top = element.offsetTop
             let currentTop = window.scrollY
-            let targetTop = top - 120
+            let targetTop = top - 100
             let s = targetTop - currentTop  // 路程
             var coords = {y: currentTop}   // 起始位置
             var t = Math.abs((s / 100) * 300)  // 时间
@@ -37,7 +37,7 @@
         },
         bindEvents: function () {
             let aTags = this.view.querySelectorAll('nav.menu > ul > li > a')
-            for (let i = 0; i < aTags.length; i++) {
+            for (let i = 0; i < aTags.length - 1; i++) {
                 aTags[i].onclick = (x) => {
                     x.preventDefault()
                     let a = x.currentTarget
