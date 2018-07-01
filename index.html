@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>王童孟的个人简历</title>
     <!--<link rel="stylesheet" href="loading.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
     <script src="//at.alicdn.com/t/font_587178_siagnqhq4vzbmx6r.js"></script>
-
 </head>
 <body>
 <!--<div id="siteWelcome" class="site-welcome active">-->
     <!--<div class="loading"></div>-->
 </div>
-<div id="topNavBar" class="topNavBar">
+<div id="topNavBar" class="topNavBar ">
     <div class="topNavBar-inner clearfix">
         <a class="logo" href="#" alt="logo" style="float:left;">
             <span class="rs">W</span><span class="card">TM</span>
@@ -49,7 +50,7 @@
     <div class="mask"></div>
 </div>
 <main>
-    <div data-x id="siteAbout" class="userCard">
+    <div data-x id="siteAbout" class="userCard ">
         <div class="pictureAndText clearfix">
             <div class="picture">
                 <img src="./img/resume.jpg" width=272 height=400 alt="头像">
@@ -117,6 +118,38 @@
             <section class="project clearfix">
                 <div class="project_intro">
                     <header class="project_intro_header clearfix">
+                        <h4 class="project_intro_header_title">在线简历编辑器<span> - a shareable resume-editor online</span></h4>
+                        <ul class="tech-tag-list">
+                            <li class="tech-tag-list_item tech-tag-list_item-html">HTML</li>
+                            <li class="tech-tag-list_item tech-tag-list_item-css">CSS 3</li>
+                            <li class="tech-tag-list_item tech-tag-list_item-javascript">JavaScript</li>
+                            <li class="tech-tag-list_item tech-tag-list_item-vue">Vue</li>
+                            <!--<li class="tech-tag-list_item tech-tag-list_item-jQuery">jQuery</li>-->
+
+                        </ul>
+                    </header>
+                    <div class="project_intro_header_content">
+                        <p>
+                            基于vue技术栈，以LeanCloud为数据库，完成一个可分享的在线简历编辑器，实现以下功能：
+                        </p>
+                        <ul class="list">
+                        <li>以LeanCloud为数据库，完成登录、注册、注销功能</li>
+                        <li>实现信息区、技能区、项目区的可编辑功能</li>
+                        <li>实现保存、分享、打印、换肤功能</li>
+                        </ul>
+                        <p class="project_intro_links">
+                            <a href="https://littlebirdflying.github.io/my-vue-resume-20180613/src/index.html#/" target="_blank">预览地址</a>
+                            <a href="https://github.com/littlebirdflying/my-vue-resume-20180613" target="_blank">源码地址</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project_thumb notPrint">
+                    <img src="./img/works/resume-editor.jpg" alt="导航栏">
+                </div>
+            </section>
+            <section class="project clearfix">
+                <div class="project_intro">
+                    <header class="project_intro_header clearfix">
                         <h4 class="project_intro_header_title">导航栏<span> - Tiny navigation page</span></h4>
                         <ul class="tech-tag-list">
                             <li class="tech-tag-list_item tech-tag-list_item-html">HTML</li>
@@ -141,7 +174,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project_thumb">
+                <div class="project_thumb notPrint">
                     <img src="./img/works/nav-page.jpg" alt="导航栏">
                 </div>
             </section>
@@ -171,7 +204,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project_thumb">
+                <div class="project_thumb notPrint">
                     <img src="./img/works/canvas.jpg" alt="canvas画板">
                 </div>
             </section>
@@ -202,7 +235,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project_thumb">
+                <div class="project_thumb notPrint">
                     <img src="./img/works/Minion.jpg" alt="苹果风格轮播">
                 </div>
             </section>
@@ -233,7 +266,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project_thumb">
+                <div class="project_thumb notPrint">
                     <img src="./img/works/animation-resume.jpg" alt="导航栏">
                 </div>
             </section>
