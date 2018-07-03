@@ -485,6 +485,30 @@ section.myPortfolio .project_intro_links > a:hover {
 .tech-tag-list_item-vue {
     background: #80bd01;
 }
+.tech-tag-list_item-vue-cli {
+    background: #8f94dc;
+}
+.tech-tag-list_item-axios {
+    background: #97a0ad;
+}
+.tech-tag-list_item-vue-router {
+    background: #d7a273;
+}
+.tech-tag-list_item-vuex {
+    background: #92c3cb;
+}
+.tech-tag-list_item-es6 {
+    background: #687772;
+}
+.tech-tag-list_item-npm {
+    background: #f5a573;
+}
+.tech-tag-list_item-lean-cloud {
+    background: #3b4f40;
+}
+.tech-tag-list_item-qiniu {
+    background: #ebe3df;
+}
 @media (min-width: 750px) {
     .section .boundary {
         padding: 50px 0;
