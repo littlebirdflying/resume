@@ -37,7 +37,7 @@
         },
         bindEvents: function () {
             let aTags = this.view.querySelectorAll('nav.menu > ul > li > a')
-            for (let i = 0; i < aTags.length - 1; i++) {
+            for (let i = 0; i < aTags.length - 2; i++) {
                 aTags[i].onclick = (x) => {
                     x.preventDefault()
                     let a = x.currentTarget
