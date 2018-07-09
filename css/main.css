@@ -507,6 +507,7 @@ section.myPortfolio .project_intro_links > a:hover {
     background: #3b4f40;
 }
 .tech-tag-list_item-qiniu {
+    color: #333 !important;
     background: #ebe3df;
 }
 @media (min-width: 750px) {
