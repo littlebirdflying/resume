@@ -310,29 +310,6 @@ body > main {
     padding-bottom:60px;
 }
 
-body > main .downloadResume-wrapper {
-    position:absolute;
-    top:-30px;
-    right:0;
-}
-
-body > main .downloadResume {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 21px 55px;
-    border-radius: 2px;
-    color: #3d4451;
-    font-weight: bold;
-    margin: 32px 0;
-    transition: box-shadow 0.2s;
-}
-
-body > main .downloadResume:hover {
-    background: #EFEFEF;
-    border: 1px solid #CDCFD1;
-    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
-}
 
 .selfIntroduction {
     max-width: 940px;
@@ -401,7 +378,6 @@ section.skills .tech-stack > ul > li {
     left: -28px;
     top: 5px;
 }
-
 
 
 section.myPortfolio {
@@ -566,4 +542,55 @@ section.message > ol > li {
     box-sizing:border-box;
     width: 33.33333%;
     padding:20px;
+}
+
+/*下载按钮样式*/
+section.download {
+    position:fixed;
+    top:50%;
+    transform: translateY(-50%);
+    right:0;
+    z-index: 1;
+}
+section.download .downloadResume {
+    display: inline-block;
+    font-size: 14px;
+    padding: 21px 22px;
+    border-radius: 4px;
+    color: #f4f4f4;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transition: box-shadow 0.2s;
+    letter-spacing: 1em;
+    background: #1abc9c;
+    font-family: Arial,sans-serif;
+    border: solid 0 #e3edf4;
+    border-bottom: 2px solid #3a9a95;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0.7;
+}
+section.download .downloadResume:hover {
+    background: #2a8a85;
+}
+/*打印个人信息样式*/
+.personal-info-print {
+    display: none;
+    line-height: 1.5;
+    border-bottom: 1px solid #ddd;
+}
+.personal-info-print .name {
+    margin-bottom:16px;
+}
+.personal-info-print .description {
+
+}
+.personal-info-print .contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+.personal-info-print .contact > li {
+    width:40%;
+    padding:5px;
 }

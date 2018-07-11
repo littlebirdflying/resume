@@ -1,3 +1,35 @@
+/*打印时隐藏的*/
+/*userCard、下载按钮、项目图片*/
 .notPrint {
     display:none;
+}
+body > main {
+    margin: 50px 0 20px 0;
+    padding:0;
+
+}
+section.myPortfolio {
+    padding:0;
+    margin:0 0 20px 0;
+}
+section.skills,
+section.portfolio {
+    margin:0;
+    padding:0;
+}
+section.skills > h2,
+section.portfolio > h2,
+section.myPortfolio .section_header_title {
+    text-align: left;
+}
+section.myPortfolio .project {
+    padding:5px 0 0 0;
+}
+section.myPortfolio .project_intro_links {
+    margin-top: 5px;
+    text-align: center;
+}
+/*打印时显示的*/
+.personal-info-print {
+    display: block;
 }

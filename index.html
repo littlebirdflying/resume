@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>王童孟的个人简历</title>
+    <title>王童孟的个人简历 | Web前端开发工程师 | Front-end Web Developer</title>
     <!--<link rel="stylesheet" href="loading.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -12,7 +12,7 @@
 <!--<div id="siteWelcome" class="site-welcome active">-->
     <!--<div class="loading"></div>-->
 </div>
-<div id="topNavBar" class="topNavBar ">
+<div id="topNavBar" class="topNavBar notPrint ">
     <div class="topNavBar-inner clearfix">
         <a class="logo" href="#" alt="logo" style="float:left;">
             <span class="rs">W</span><span class="card">TM</span>
@@ -48,11 +48,11 @@
     </div>
 
 </div>
-<div class="banner">
-    <div class="mask"></div>
+<div class="banner notPrint">
+    <div class="mask "></div>
 </div>
 <main>
-    <div data-x id="siteAbout" class="userCard ">
+    <div data-x id="siteAbout" class="userCard notPrint">
         <div class="pictureAndText clearfix">
             <div class="picture">
                 <img src="./img/resume.jpg" width=272 height=400 alt="头像">
@@ -104,9 +104,37 @@
                 </svg>
             </a>
         </footer>
-        <p class="downloadResume-wrapper">
-            <a class="downloadResume" href="./resume.pdf" target="_blank" download>点击下载 pdf 简历</a>
-        </p>
+
+    </div>
+    <div class="personal-info-print">
+        <h1 class="name">王童孟</h1>
+        <p class="description">男，26岁，硕士，西北农林科技大学，前端工程师</p>
+        <ul class="contact">
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shouji"></use>
+                </svg>
+                18519722650
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-QQ"></use>
+                </svg>
+                767610876
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+                little-bird-flying
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-youxiang"></use>
+                </svg>
+                tongmengwang@163.com
+            </li>
+        </ul>
     </div>
     <!--<p class="selfIntroduction">-->
     <!--</p>-->
@@ -220,22 +248,21 @@
             <section class="project clearfix">
                 <div class="project_intro">
                     <header class="project_intro_header clearfix">
-                        <h4 class="project_intro_header_title">导航栏<span> - Tiny navigation page</span></h4>
+                        <h4 class="project_intro_header_title">快捷导航<span> -a Quick Navigation Page</span></h4>
                         <ul class="tech-tag-list">
                             <li class="tech-tag-list_item tech-tag-list_item-html">HTML 5</li>
                             <li class="tech-tag-list_item tech-tag-list_item-css">CSS 3</li>
                             <li class="tech-tag-list_item tech-tag-list_item-javascript">JavaScript</li>
-                            <!--<li class="tech-tag-list_item tech-tag-list_item-jQuery">jQuery</li>-->
-
                         </ul>
                     </header>
                     <div class="project_intro_header_content">
                         <p>
-                            基于原生 JavaScript ，实现自定义键盘导航栏工具，主要功能有：
+                            基于原生 JavaScript 结合 localStorage 在线存储功能，动态生成一个优美快捷的个人导航页。实现以下功能：
                         </p>
                         <ul class="list">
-                            <li>为键盘上的 26 个字母绑定了导航网址，敲击字母即可跳转至相应导航页面</li>
-                            <li>可以自定义每个键绑定的导航网址</li>
+                            <li>键盘快捷导航功能,敲击键盘字母跳转到绑定导航网址。</li>
+                            <li>导航键编辑导航地址功能。</li>
+                            <li>主流搜索引擎搜索功能</li>
 
                         </ul>
                         <p class="project_intro_links">
@@ -353,6 +380,12 @@
                 <div class="circle"></div>
                 <h4>HTML5 & CSS3</h4>
                 <p>能独立制作精美页面，掌握 CSS 动画、过渡效果、响应式等常用技术。</p>
+                <p>标签语义化：能根据 HTML5 标准编写具有语义化的文档结构。</p>
+                <p>CSS居中：能快速对页面元素进行水平或垂直居中。</p>
+                <p>页面布局：能够使用float、flex、grid等不同方案进行页面布局。</p>
+                <p> CSS动画：能使用keyframes、transition、canvas制作动画</p>
+                <p>响应式页面：PC 端根据 <meta name="viewport"> 以及媒体查询 (media query)，移动端根据动态 REM、vw/vh 等书写响应式页面，100% 还原设计稿 </p>
+                <p>了解Bootstrapde的基本使用规则</p>
             </li>
             <li>
                 <div class="circle"></div>
@@ -394,6 +427,12 @@
     </section>
 
 </section>
+<section class="download notPrint">
+    <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./resume.pdf" download="前端工程师-西北农林科技大学-硕士-王童孟-2018.pdf">下载简历</a>
+    </p>
+</section>
+
 <!--<section class="message">-->
     <!--<h2>留言</h2>-->
     <!--<ol id="messageList">-->
@@ -406,7 +445,7 @@
         <!--<input type="submit" value="提交">-->
     <!--</form>-->
 <!--</section>-->
-<script src="//at.alicdn.com/t/font_587178_siagnqhq4vzbmx6r.js"></script>
+<script src="//at.alicdn.com/t/font_587178_vdxw3bgk42.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>-->
 <script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
