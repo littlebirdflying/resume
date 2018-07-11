@@ -64,6 +64,7 @@ img {max-width:100%;}
     overflow: hidden;
 }
 
+
 .topNavBar {
     padding: 20px 0 20px 0;
     position: fixed;
@@ -367,6 +368,11 @@ section.skills .tech-stack > ul > li {
     top: -5px;
     margin: 0 0 20px 20px;
 }
+section.skills .tech-stack > ul > li li {
+    line-height: 1.7;
+    list-style: disc;
+    margin-left: 2em;
+}
 .circle {
     height: 14px;
     width: 14px;
@@ -486,6 +492,7 @@ section.myPortfolio .project_intro_links > a:hover {
     color: #333 !important;
     background: #ebe3df;
 }
+
 @media (min-width: 750px) {
     .section .boundary {
         padding: 50px 0;
@@ -502,6 +509,7 @@ section.myPortfolio .project_intro_links > a:hover {
         float: right;
         background: #eee;
     }
+
 }
 @media (min-width: 960px) {
     .project {
@@ -514,6 +522,7 @@ section.myPortfolio .project_intro_links > a:hover {
         width: 320px;
         margin-right: -370px;
     }
+
 }
 @media (min-width: 1040px) {
     .boundary {
