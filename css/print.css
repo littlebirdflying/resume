@@ -17,6 +17,9 @@ section.portfolio {
     margin:0;
     padding:0;
 }
+section.skills {
+    padding-top: 20px;
+}
 section.skills > h2,
 section.portfolio > h2,
 section.myPortfolio .section_header_title {
