@@ -36,6 +36,9 @@ section.skills .tech-stack > ul {
     border-left: none;
     margin-left: 0;
 }
+section.skills {
+    box-shadow: none;
+}
 /*打印时显示的*/
 .personal-info-print {
     display: block;
