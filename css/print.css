@@ -14,7 +14,8 @@ section.myPortfolio {
 }
 
 section.skills,
-section.portfolio {
+section.portfolio,
+section.experience {
     margin:0;
     padding:0;
 }
@@ -23,6 +24,7 @@ section.skills {
 }
 section.skills > h2,
 section.portfolio > h2,
+section.experience > h2,
 section.myPortfolio .section_header_title {
     text-align: left;
 }

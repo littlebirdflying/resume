@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/print.css" media="print">
 </head>
+
 <body>
-<!--<div id="siteWelcome" class="site-welcome active">-->
+    <!--<div id="siteWelcome" class="site-welcome active">-->
     <!--<div class="loading"></div>-->
-<!--</div>-->
+    <!--</div>-->
     <div id="topNavBar" class="topNavBar notPrint ">
         <div class="topNavBar-inner clearfix">
             <a class="logo" href="#" alt="logo" style="float:left;">
@@ -59,10 +61,10 @@
                     <img src="./img/resume.jpg" width=272 height=400 alt="头像">
                 </div>
                 <div class="text">
-                  <span class="welcome">你好，我是一名前端工程师
-                    <span class="triangle"></span>
-                  </span>
-                    <div >
+                    <span class="welcome">你好，我是一名前端工程师
+                        <span class="triangle"></span>
+                    </span>
+                    <div>
                         <h1>王童孟</h1>
                         <p>
                             男，26岁，硕士，西北农林科技大学
@@ -109,7 +111,7 @@
         </div>
         <div class="personal-info-print">
             <h1 class="name">王童孟</h1>
-            <p class="description">男，1991/11，硕士(2014-2016)，西北农林科技大学，自学前端一年。</p>
+            <p class="description">男，1991/11，硕士(2014-2016)，西北农林科技大学，前端工程师。</p>
             <ul class="contact">
                 <li>
                     <svg class="icon" aria-hidden="true">
@@ -216,7 +218,8 @@
                                 <li>编辑器的保存、分享、打印、换肤功能。</li>
                             </ul>
                             <p class="project_intro_links">
-                                <a href="https://littlebirdflying.github.io/my-vue-resume-20180613/src/index.html#/" target="_blank">预览地址</a>
+                                <a href="https://littlebirdflying.github.io/my-vue-resume-20180613/src/index.html#/"
+                                    target="_blank">预览地址</a>
                                 <a href="https://github.com/littlebirdflying/my-vue-resume-20180613" target="_blank">源码地址</a>
                             </p>
                         </div>
@@ -377,46 +380,52 @@
     <section data-x id="siteSkills" class="skills">
         <h2>技能</h2>
         <section class="tech-stack">
-            <h3>前端</h3>
             <ul>
-
+                <li>
+                    <div class="circle"></div>
+                    <h4>HTML5 & CSS3</h4>
+                    <ul>
+                        <li>标签语义化：能根据 HTML5 标准编写具有语义化的文档结构。</li>
+                        <li>CSS居中与布局：能快速对元素进行居中处理，使用float、flex、grid等方案进行页面布局。</li>
+                        <li>CSS动画：能使用keyframes、transition、transform等实现常见动画效果。</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="circle"></div>
+                    <h4>移动端页面</h4>
+                    <ul>
+                        <li>PC 端能使用(meta name="viewport")以及媒体查询 (media query)进行响应式开发。</li>
+                        <li>移动端根据百分比、动态 REM、vw/vh 等书写响应式页面，100% 还原设计稿。 </li>
+                    </ul>
+                </li>
                 <li>
                     <div class="circle"></div>
                     <h4>ECMAScript（JavaScript）</h4>
                     <ul>
-                        <li>熟悉 ECMAScript，理解异步、单线程、this、作用域链、闭包、原型链、面向对象等。</li>
-                        <li>了解 ES6 的部分常用语法,能在项目中普遍使用let、块级作用域、箭头函数、模板字符串、解构赋值、Promise 等语法。</li>
+                        <li>熟悉 ECMAScript，理解异步与单线程、作用域链与闭包、原型链与继承、面向对象等核心知识。</li>
+                        <li>学习了部分 ES6 语法,能使用 let 与块级作用域、解构赋值、数据类型的扩展、Set 和 Map 数据结构、Class 与继承、Promise 异步写法、模块化等语法。</li>
                     </ul>
                 </li>
                 <li>
                     <div class="circle"></div>
                     <h4>DOM/BOM</h4>
                     <ul>
-                        <li>熟悉 DOM 事件模型，捕获、冒泡以及如何阻止事件的传递。</li>
+                        <li>熟悉 DOM 事件模型，理解捕获、冒泡以及如何阻止事件的传递。</li>
                         <li>熟悉原生 DOM 和 BOM 使用和相关标准。</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="circle"></div>
-                    <h4>模块化与设计模式</h4>
-                    <ul>
-                        <li>能使用 MVC 设计模式思想组织代码，使用模块化的编程思想进行开发。</li>
-                        <li>了解 AMD 模块化思想进行代码模块化。</li>
-                        <li>了解 CommonJS 配合 npm 以及构建工具进行基础的模块化操作。 </li>
                     </ul>
                 </li>
                 <li>
                     <div class="circle"></div>
                     <h4>jQuery</h4>
                     <ul>
-                        <li>熟悉 jQuery 的常用 API，能使用 jQuery 技术栈进行网站开发。</li>
+                        <li>熟悉 jQuery 的常用 API，能使用 jQuery 类库进行常规网站开发。</li>
                     </ul>
                 </li>
                 <li>
                     <div class="circle"></div>
                     <h4>Vue.js</h4>
                     <ul>
-                        <li>能使用 Vue.js 完成需求，了解 Vue.js 的数据双向绑定、数据响应式原理、父子组件间的通信原理。</li>
+                        <li>能使用 Vue.js 完成常见需求，理解 Vue.js 的数据双向绑定、数据响应式原理、父子组件间的通信原理。</li>
                         <li>能使用 Vue-Router 制作前端路由；能使用 vuex 进行状态管理。</li>
                     </ul>
                 </li>
@@ -426,14 +435,7 @@
                     <ul>
                         <li>了解 HTTP 基础知识，了解常见状态码含义，能够根据请求查看响应。</li>
                         <li>理解客户端缓存、同源策略，以及常用的跨域方法。</li>
-                        <li>理解浏览器运行机制，理解页面加载的整个过程。</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="circle"></div>
-                    <h4>Node.js</h4>
-                    <ul>
-                        <li>了解 Node.js 的部分基础知识，使用过 Node.js 搭建简易服务器，使用过 express 框架做过 demo。</li>
+                        <li>了解浏览器运行机制和页面加载的整个过程。</li>
                     </ul>
                 </li>
                 <li>
@@ -454,32 +456,24 @@
                     <div class="circle"></div>
                     <h4>前端工程化</h4>
                     <ul>
-                        <li>使用过 WebPack 等前端打包工具，能够进行基础的使用。</li>
-                        <li>能在项目中使用 Less / Sass 等预处理工具。</li>
+                        <li>使用过 WebPack、Rollup、Parcel 等前端打包工具，能够进行基础的使用。</li>
+                        <li>能在项目中使用 Less、Sass、Stylus 等预处理器，提高编程效率。</li>
                         <li>了解基本的前端安全，性能优化等知识，并能在项目中加以实践。</li>
                     </ul>
                 </li>
-                <li>
-                    <div class="circle"></div>
-                    <h4>HTML5 & CSS3</h4>
-                    <ul>
-                        <li>标签语义化：能根据 HTML5 标准编写具有语义化的文档结构。</li>
-                        <li>CSS居中与布局：能快速对元素进行居中处理，使用float、flex、grid等方案进行页面布局。</li>
-                        <li>CSS动画：能使用keyframes、transition、transform等实现常见动画效果。</li>
-                        <li>了解Bootstrap的基本使用规则。</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="circle"></div>
-                    <h4>移动端页面</h4>
-                    <ul>
-                        <li>PC 端能使用(meta name="viewport")以及媒体查询 (media query)进行响应式开发。</li>
-                        <li>移动端根据百分比、动态 REM、vw/vh 等书写响应式页面，100% 还原设计稿。 </li>
-                    </ul>
-                </li>
-
             </ul>
         </section>
+
+
+    </section>
+    <section id="experience" class="experience">
+        <style>
+           
+        </style>
+        <h2>个人履历</h2>
+        <p>2016年硕士毕业于【西北农林科技大学】，食品工程专业；2016年至2017年，期间任职于北京君星葡萄酿酒有限公司，担任葡萄酒酿酒师一职；因喜爱计算机的缘故，于2017年8月开始接触前端，目前自学前端一年，喜欢新技术新知识，自学能力较强。
+        </p>
+    </section>
 
 
     </section>
@@ -489,31 +483,32 @@
         </p>
     </section>
 
-<!--<section class="message">-->
+    <!--<section class="message">-->
     <!--<h2>留言</h2>-->
     <!--<ol id="messageList">-->
     <!--</ol>-->
     <!--<form id="postMessageForm" style="width:700px; margin:50px auto;">-->
-        <!--<label for="">姓名</label>-->
-        <!--<input type="text" name="name">-->
-        <!--<label for="">内容</label>-->
-        <!--<input type="text" name="content">-->
-        <!--<input type="submit" value="提交">-->
+    <!--<label for="">姓名</label>-->
+    <!--<input type="text" name="name">-->
+    <!--<label for="">内容</label>-->
+    <!--<input type="text" name="content">-->
+    <!--<input type="submit" value="提交">-->
     <!--</form>-->
-<!--</section>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>-->
-<script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
-<script src="//at.alicdn.com/t/font_587178_vwi2iocx42c.js"></script>
+    <!--</section>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>-->
+    <script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
+    <script src="//at.alicdn.com/t/font_587178_vwi2iocx42c.js"></script>
 
-<script src="./js/base/View.js"></script>
-<script src="./js/base/Model.js"></script>
-<script src="./js/base/Controller.js"></script>
-<!-- 模块化 -->
-<!--<script src="./js/init-swiper.js"></script>-->
-<!--<script src="./js/auto-slide-up.js"></script>-->
-<script src="./js/sticky-topbar.js"></script>
-<script src="./js/smoothly-navigation.js"></script>
-<!--<script src="./js/message.js"></script>-->
+    <script src="./js/base/View.js"></script>
+    <script src="./js/base/Model.js"></script>
+    <script src="./js/base/Controller.js"></script>
+    <!-- 模块化 -->
+    <!--<script src="./js/init-swiper.js"></script>-->
+    <!--<script src="./js/auto-slide-up.js"></script>-->
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/smoothly-navigation.js"></script>
+    <!--<script src="./js/message.js"></script>-->
 </body>
+
 </html>
